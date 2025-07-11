@@ -13,6 +13,7 @@ enum_with_order! {
         Gas_AArch64_Darwin,
         Uxn,
         Mos6502,
+        DotNyet,
     }
 }
 
@@ -26,6 +27,7 @@ impl Target {
             Self::Gas_AArch64_Darwin  => c!("gas-aarch64-darwin"),
             Self::Uxn                 => c!("uxn"),
             Self::Mos6502             => c!("6502"),
+            Self::DotNyet             => c!("dotnyet"),
         }
     }
 

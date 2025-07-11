@@ -1733,6 +1733,9 @@ pub unsafe fn main(mut argc: i32, mut argv: *mut*mut c_char) -> Option<()> {
                 runner::mos6502::run(&mut output, config, effective_output_path, None)?;
             }
         }
+        Target::DotNyet => {
+            assert!(false, "DotNyet target is not yet implemented");
+        }
     }
     Some(())
 }
